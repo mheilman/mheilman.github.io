@@ -1,0 +1,3 @@
+[submodule "pydata_chicago_2016/reveal.js"]
+	path = pydata_chicago_2016/reveal.js
+	url = git@github.com:hakimel/reveal.js.git
