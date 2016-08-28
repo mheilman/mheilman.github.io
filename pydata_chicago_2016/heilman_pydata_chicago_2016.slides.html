@@ -12882,7 +12882,7 @@ You can&#39;t pickle a tf.Session.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Outline-of-our-backend-implementation">Outline of our backend implementation<a class="anchor-link" href="#Outline-of-our-backend-implementation">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">_BocceBackend</span><span class="p">(</span><span class="n">ParallelBackendBase</span><span class="p">):</span>
+<h3 id="Outline-of-our-backend-implementation">Outline of our backend implementation<a class="anchor-link" href="#Outline-of-our-backend-implementation">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">_CivisBackend</span><span class="p">(</span><span class="n">ParallelBackendBase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
         <span class="o">...</span>
 
@@ -12914,12 +12914,12 @@ You can&#39;t pickle a tf.Session.
             <span class="o">...</span>
 
             <span class="c1"># Wait for the job to finish.</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">_BocceFutureResult</span><span class="p">(</span><span class="n">future</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">_CivisFutureResult</span><span class="p">(</span><span class="n">future</span><span class="p">,</span> <span class="n">callback</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">result</span>
 
 
-<span class="k">class</span> <span class="nc">_BocceFutureResult</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">_CivisFutureResult</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">future</span><span class="p">,</span> <span class="n">callback</span><span class="p">):</span>
         <span class="o">...</span>
 
